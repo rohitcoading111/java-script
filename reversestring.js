@@ -3,8 +3,7 @@ function reverseString(str) {
         return "";
     }
 
-    let remainingString = str.slice(1); // "abc" -> "bc"
-
+    let remainingString = str.slice(1); 
     let reversedRemaining = reverseString(remainingString);
 
     let firstChar = str[0];
