@@ -11,6 +11,7 @@ let palindrome = function(a){
         return false;
       }
    }
-    return true;
+    
+   return true;
 }
 console.log(palindrome("nitin"));
