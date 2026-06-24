@@ -18,5 +18,21 @@ function getTopPlayer(players) {
 }
 
 // Average Score
+function getAverageScore(players) {
+  let total = 0;
 
+  for (let player of players) {
+    total += player.score;
+  }
 
+  return total / players.length;
+}
+
+// Sort Descending
+function sortPlayers(players) {
+  return [...players].sort((a, b) => b.score - a.score);
+}
+
+console.log("Top Player:", getTopPlayer(players));
+console.log("Average Score:", getAverageScore(players));
+console.log("Sorted:", sortPlayers(players));
