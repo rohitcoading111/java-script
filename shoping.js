@@ -10,3 +10,11 @@ function increaseQty(id) {
     }
   }
 }
+
+function decreaseQty(id) {
+  for (let item of cart) {
+    if (item.id === id && item.qty > 1) {
+      item.qty--;
+    }
+  }
+}
