@@ -18,3 +18,8 @@ function decreaseQty(id) {
     }
   }
 }
+
+increaseQty(1);
+decreaseQty(2);
+
+console.log(cart);
