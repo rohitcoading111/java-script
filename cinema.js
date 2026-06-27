@@ -20,3 +20,7 @@ function bookSeat(seatNo) {
   console.log("Seat Not Found");
 }
 
+bookSeat("A1");
+bookSeat("A1");
+
+console.log(seats);
