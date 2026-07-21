@@ -14,3 +14,15 @@ function deposit(amount) {
     }
 }
 
+function withdraw(amount) {
+    if (amount <= 0) {
+        console.log("Invalid Withdraw Amount!");
+    } else if (amount > balance) {
+        console.log("Insufficient Balance!");
+    } else {
+        balance -= amount;
+        console.log("₹" + amount + " Withdrawn Successfully.");
+        console.log("Remaining Balance: ₹" + balance);
+    }
+}
+
