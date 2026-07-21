@@ -48,3 +48,16 @@ function atm(choice, amount = 0) {
             console.log("Invalid Choice!");
     }
 }
+
+
+atm(1);          // Check Balance
+
+atm(2, 2000);    // Deposit ₹2000
+
+atm(3, 1500);    // Withdraw ₹1500
+
+atm(3, 10000);   // Insufficient Balance
+
+atm(1);          // Check Updated Balance
+
+atm(4);          // Exit
