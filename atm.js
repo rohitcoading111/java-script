@@ -26,3 +26,25 @@ function withdraw(amount) {
     }
 }
 
+function atm(choice, amount = 0) {
+    switch (choice) {
+        case 1:
+            checkBalance();
+            break;
+
+        case 2:
+            deposit(amount);
+            break;
+
+        case 3:
+            withdraw(amount);
+            break;
+
+        case 4:
+            console.log("Thank You for Using Our ATM!");
+            break;
+
+        default:
+            console.log("Invalid Choice!");
+    }
+}
